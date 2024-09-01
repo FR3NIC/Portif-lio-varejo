@@ -1,0 +1,54 @@
+@import url('background.css');
+@import url('header.css');
+
+/* ESTILO GERAL */
+{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0px;
+    align-items: center;
+    gap: 60px;
+}
+
+/* ESTILO TOPO DO SITE /
+section.topo-do-site {
+    padding: 550px 4%;
+}
+
+.topo-do-site h1 {
+    text-align: center;
+    color: #fff;
+    font-family: "Michroma", system-ui;
+    font-size: 35px;
+}
+
+.topo-do-site h1 span {
+    color: #3336f0;
+}
+
+.topo-do-site p {
+    color: #fff;
+    text-align: center;
+}
+
+/ ESTILO DO SOBRE */
+
+.sobre {
+    margin-top: 40px;
+}
+
+section.sobre {
+    padding: 40px 4%;
+}
+
+.sobre .txt-sobre {
+    color: #fff;
+}
