@@ -2,10 +2,10 @@
 @import url('header.css');
 
 /* ESTILO GERAL */
-{
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 .flex {
@@ -18,7 +18,7 @@
     gap: 60px;
 }
 
-/* ESTILO TOPO DO SITE /
+/* ESTILO TOPO DO SITE */
 section.topo-do-site {
     padding: 550px 4%;
 }
@@ -39,7 +39,7 @@ section.topo-do-site {
     text-align: center;
 }
 
-/ ESTILO DO SOBRE */
+/* ESTILO DO SOBRE */
 
 .sobre {
     margin-top: 40px;
