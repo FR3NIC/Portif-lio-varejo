@@ -4,12 +4,21 @@
     padding-block: 1.25rem;
     align-items: center;
     justify-content: center;
+    background-color: #00000052;
 }
 
-
-.navigation{
-    background-color: #00000046;
+header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 400%;
+    /* adjust to your desired width /
+  background-color: #f8f6f6; / adjust to your desired background color /
+  padding: 10px; / adjust to your desired padding /
+  z-index: 1; / ensure it's above other elements */
 }
+
 
 .navigation {
     display: flex;
@@ -28,18 +37,19 @@
     display: inline-block;
     transition: .2s;
 }
-.navigation__link:hover{
+
+.navigation__link:hover {
     color: #ffffff;
     transform: scale(1.05);
 }
 
-.navigation__social{
+.navigation__social {
     width: 90px;
     display: flex;
     column-gap: 15px;
 }
 
-.navigation__social svg{
+.navigation__social svg {
     width: 40px;
     height: 40px;
     opacity: 0.6;
@@ -51,4 +61,3 @@
     transition: .5s;
     cursor: pointer;
 }
-

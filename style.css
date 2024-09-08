@@ -8,47 +8,229 @@
     font-family: 'Poppins', sans-serif;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* adjust to your desired width /
+  background-color: #f8f6f6; / adjust to your desired background color /
+  padding: 10px; / adjust to your desired padding /
+  z-index: 1; / ensure it's above other elements */
+}
+
 .flex {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 0px;
-    align-items: center;
-    gap: 60px;
+
+}
+
+body {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(63, 34, 195, 1) 44%, rgba(0, 0, 0, 1) 80%);
 }
 
 /* ESTILO TOPO DO SITE */
-section.topo-do-site {
-    padding: 550px 4%;
+section.topo-do-site .flex {
+    padding: 40px 4%;
+    align-items: center;
+    gap: 50px;
 }
 
 .topo-do-site h1 {
     text-align: center;
     color: #fff;
     font-family: "Michroma", system-ui;
-    font-size: 35px;
+    font-size: 45px;
+    line-height: 100px;
 }
 
 .topo-do-site h1 span {
     color: #3336f0;
+    font-family: "Michroma", system-ui;
+    font-size: 45px;
 }
 
 .topo-do-site p {
+    font-family: "Poppins", system-ui;
     color: #fff;
     text-align: center;
+    font-size: 25px;
+    margin-top: 40px;
 }
 
 /* ESTILO DO SOBRE */
 
-.sobre {
-    margin-top: 40px;
+section.sobre h2 {
+    font-family: "Poppins", system-ui;
+    color: #fff;
+    font-size: 18px;
+    text-align: left;
 }
 
-section.sobre {
+section.sobre .interface {
+    padding: 100px;
+}
+
+/*PROJETOS*/
+
+section.projetos {
     padding: 40px 4%;
 }
 
-.sobre .txt-sobre {
+section.projetos .flex {
+    gap: 10px;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.projetos .interface-a h1 {
+    text-align: center;
     color: #fff;
+    font-family: "Michroma", system-ui;
+    font-size: 35px;
+    line-height: 100px;
+}
+
+.img-port {
+    width: 500px;
+    height: 890px;
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* TEXTO CLIENTES */
+h2 {
+    padding: 40px;
+    color: #ffffff;
+    font-family: "Michroma", system-ui;
+    font-size: 35px;
+    text-align: center;
+
+}
+
+/* CLIENTES */
+section.slider {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+
+h3 {
+    color: #ffffff;
+    font-family: "Michroma", system-ui;
+    font-size: 35px;
+    text-align: center;
+}
+
+/* OUTROS SERVICOS */
+
+section.outros-servicos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    inset: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100vh;
+    scale: 0.6;
+}
+
+@media screen and (max-width: 1020px) {
+
+    /* CLASSES GERAIS */
+    .flex {
+        flex-direction: column;
+    }
+
+    /* CABEÇALHO */
+    .navigation {
+        display: none;
+    }
+
+    .topo-do-site h1 {
+
+        font-family: "Michroma", system-ui;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .topo-do-site h1 span {
+        color: #3336f0;
+        font-family: "Michroma", system-ui;
+        font-size: 30px;
+    }
+
+    .topo-do-site p {
+        font-family: "Poppins", system-ui;
+        color: #fff;
+        text-align: center;
+        font-size: 15px;
+        margin-top: 40px;
+    }
+
+    section.topo-do-site {
+        padding: 40px 8%;
+        gap: 50px;
+    }
+
+    section.sobre h2 {
+        font-size: 12px;
+        text-align: center;
+        padding: 20px 2%;
+    }
+
+    section.projetos {
+        padding: 20px 15%;
+    }
+
+    section.projetos .flex {
+        gap: 20px;
+        justify-content: space-around;
+        margin-top: 100px;
+    }
+
+    .img-port {
+        width: 400px;
+        height: 710px;
+        background-size: cover;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+    h2 {
+        padding: 40px;
+        color: #ffffff;
+        font-family: "Michroma", system-ui;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    section.slider {
+        width: 100%;
+        height: 100vh;
+        padding: 20px;
+    }
+
+    section.outros-servicos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        inset: 0;
+        z-index: -2;
+        width: 100%;
+        height: 100vh;
+        scale: 0.3;
+    }
 }
